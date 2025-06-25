@@ -1,5 +1,5 @@
 
-import { ArrowRight, Palette, Plane, Star, Users, Zap } from "lucide-react";
+import { ArrowRight, Palette, Plane, Star, Users, Zap, Triangle, Circle, Square } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -49,161 +49,194 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-red-950 to-slate-800 relative overflow-hidden">
-      {/* Enhanced Background Effects */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        {/* Large animated gradients */}
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-br from-red-500/30 to-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/3 right-0 w-80 h-80 bg-gradient-to-l from-red-600/25 to-pink-500/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-gradient-to-t from-red-400/20 to-yellow-500/10 rounded-full blur-2xl animate-pulse delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-red-500/15 via-purple-500/10 to-blue-500/15 rounded-full blur-3xl animate-pulse delay-3000"></div>
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+      {/* Chaotic Geometric Background */}
+      <div className="fixed inset-0 pointer-events-none">
+        {/* Rotating geometric shapes */}
+        <div className="absolute top-[10%] left-[5%] w-32 h-32 border-2 border-red-500/30 rotate-45 animate-spin origin-center" style={{animationDuration: '20s'}}></div>
+        <div className="absolute top-[60%] right-[10%] w-24 h-24 bg-red-600/20 rounded-full animate-bounce"></div>
+        <div className="absolute bottom-[20%] left-[15%] w-16 h-16 bg-gradient-to-r from-red-500/40 to-orange-500/40 transform skew-x-12 animate-pulse"></div>
         
-        {/* Moving geometric shapes */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-red-400/60 rotate-45 animate-bounce delay-300"></div>
-        <div className="absolute top-40 right-20 w-6 h-6 bg-orange-400/50 rounded-full animate-bounce delay-700"></div>
-        <div className="absolute bottom-40 left-20 w-3 h-3 bg-yellow-400/60 rotate-45 animate-bounce delay-1000"></div>
-        <div className="absolute bottom-20 right-40 w-5 h-5 bg-red-300/50 rounded-full animate-bounce delay-1500"></div>
-        <div className="absolute top-60 left-1/2 w-2 h-2 bg-pink-400/70 rounded-full animate-bounce delay-2000"></div>
+        {/* Scattered triangles */}
+        <div className="absolute top-[30%] right-[30%] w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-red-400/50 animate-pulse delay-1000"></div>
+        <div className="absolute bottom-[40%] right-[20%] w-0 h-0 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent border-b-[25px] border-b-orange-400/40 animate-bounce delay-2000"></div>
         
-        {/* Floating lines */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-0.5 bg-gradient-to-r from-transparent via-red-400/30 to-transparent rotate-45 animate-pulse delay-500"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-24 h-0.5 bg-gradient-to-r from-transparent via-orange-400/30 to-transparent -rotate-45 animate-pulse delay-1500"></div>
+        {/* Diagonal lines */}
+        <div className="absolute top-[25%] left-[50%] w-64 h-0.5 bg-gradient-to-r from-transparent via-red-500/60 to-transparent transform rotate-45 animate-pulse"></div>
+        <div className="absolute bottom-[35%] right-[40%] w-48 h-0.5 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent transform -rotate-45 animate-pulse delay-1500"></div>
+        
+        {/* Floating dots */}
+        <div className="absolute top-[15%] right-[15%] w-3 h-3 bg-red-400 rounded-full animate-ping"></div>
+        <div className="absolute bottom-[25%] left-[25%] w-2 h-2 bg-orange-400 rounded-full animate-ping delay-700"></div>
+        <div className="absolute top-[70%] left-[70%] w-4 h-4 bg-red-300 rounded-full animate-ping delay-1400"></div>
       </div>
 
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-black/20 backdrop-blur-md z-50 border-b border-red-500/20">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-red-400 drop-shadow-lg">Tapzi</div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#home" className="text-slate-300 hover:text-red-400 transition-colors">Home</a>
-              <a href="#services" className="text-slate-300 hover:text-red-400 transition-colors">Services</a>
-              <a href="#portfolio" className="text-slate-300 hover:text-red-400 transition-colors">Portfolio</a>
-              <a href="#about" className="text-slate-300 hover:text-red-400 transition-colors">About</a>
-              <a href="#contact" className="text-slate-300 hover:text-red-400 transition-colors">Contact</a>
-            </div>
+      {/* Broken Grid Navigation */}
+      <nav className="fixed top-0 left-0 w-full z-50 p-6">
+        <div className="relative">
+          {/* Logo in unconventional position */}
+          <div className="absolute -top-2 left-8 text-6xl font-black text-red-500 transform -rotate-12 drop-shadow-2xl">
+            T
+          </div>
+          <div className="absolute top-4 left-12 text-4xl font-black text-white transform rotate-6">
+            APZI
+          </div>
+          
+          {/* Scattered navigation */}
+          <div className="flex justify-end space-x-12 mt-8">
+            <a href="#work" className="text-white hover:text-red-400 transition-colors transform hover:rotate-3">WORK</a>
+            <a href="#about" className="text-white hover:text-red-400 transition-colors transform hover:-rotate-2">ABOUT</a>
+            <a href="#contact" className="text-white hover:text-red-400 transition-colors transform hover:rotate-1">CONTACT</a>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 px-6 relative">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center py-20">
-            <div className="inline-flex items-center px-4 py-2 bg-red-500/20 backdrop-blur-sm rounded-full text-red-300 text-sm font-medium mb-8 border border-red-400/30">
-              <Plane className="w-4 h-4 mr-2" />
-              Professional Flight Simulator Liveries
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-              Bringing Aircraft to
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400"> Life</span>
+      {/* Asymmetric Hero Section */}
+      <section className="min-h-screen flex items-center justify-center relative pt-32">
+        <div className="grid grid-cols-12 gap-4 max-w-7xl mx-auto px-6">
+          {/* Title breaking out of grid */}
+          <div className="col-span-8 col-start-3 relative">
+            <h1 className="text-8xl md:text-9xl font-black leading-none">
+              <span className="block text-white transform -rotate-2">FLIGHT</span>
+              <span className="block text-red-500 transform rotate-1 ml-16">SIM</span>
+              <span className="block text-white transform -rotate-1 ml-8">LIVERIES</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Specializing in high-quality, realistic liveries for Microsoft Flight Simulator and X-Plane. 
-              From authentic airline recreations to fully custom designs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 shadow-2xl hover:shadow-red-500/25 transition-all duration-300 border-0">
-                View Portfolio
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 border-red-400/50 text-red-300 hover:bg-red-500/20 backdrop-blur-sm shadow-xl transition-all duration-300">
-                Commission a Livery
-              </Button>
-            </div>
+            
+            {/* Overlapping elements */}
+            <div className="absolute -top-8 -right-16 w-32 h-32 border-4 border-red-500/30 transform rotate-45"></div>
+            <div className="absolute top-24 -left-12 w-24 h-24 bg-red-600/20 rounded-full"></div>
           </div>
-        </div>
-      </section>
-
-      {/* Request Livery Section */}
-      <section className="py-16 px-6 relative">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-black/30 backdrop-blur-md rounded-3xl p-12 border border-red-500/30 shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Transform Your Aircraft?
-            </h2>
-            <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Whether you're looking for an exact replica of your favorite airline's livery or want to create something completely unique, 
-              I bring years of expertise in flight simulator livery painting to make your vision soar.
+          
+          {/* Broken text positioning */}
+          <div className="col-span-4 col-start-9 mt-32">
+            <p className="text-xl text-gray-300 transform rotate-2 bg-red-900/20 p-6 backdrop-blur-sm">
+              Creating impossible realities in virtual skies. Each livery is a rebellion against the ordinary.
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-10 text-sm">
-              <div className="bg-red-500/10 backdrop-blur-sm rounded-xl p-4 border border-red-400/20">
-                <div className="text-red-400 font-semibold mb-2">Fast Turnaround</div>
-                <div className="text-slate-400">Most liveries completed within 1-2 weeks</div>
-              </div>
-              <div className="bg-red-500/10 backdrop-blur-sm rounded-xl p-4 border border-red-400/20">
-                <div className="text-red-400 font-semibold mb-2">HD Quality</div>
-                <div className="text-slate-400">High-resolution textures for maximum realism</div>
-              </div>
-              <div className="bg-red-500/10 backdrop-blur-sm rounded-xl p-4 border border-red-400/20">
-                <div className="text-red-400 font-semibold mb-2">Custom Work</div>
-                <div className="text-slate-400">Tailored to your exact specifications</div>
-              </div>
-            </div>
-            <Button size="lg" className="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 hover:from-red-700 hover:via-red-600 hover:to-orange-600 text-white px-12 py-4 shadow-2xl hover:shadow-red-500/30 transition-all duration-300 text-lg font-semibold">
-              Request Your Custom Livery
-              <ArrowRight className="ml-3 w-6 h-6" />
+          </div>
+          
+          {/* Floating CTA */}
+          <div className="col-span-6 col-start-2 mt-16">
+            <Button 
+              size="lg" 
+              className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-xl font-bold transform -rotate-1 hover:rotate-0 transition-all duration-300 shadow-2xl"
+            >
+              COMMISSION NOW
+              <ArrowRight className="ml-4 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-6 relative">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Services</h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Professional livery painting services tailored to your flight simulation needs
-            </p>
+      {/* Brutalist Request Section */}
+      <section className="py-32 relative">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-3 gap-8 items-stretch">
+            {/* Asymmetric content blocks */}
+            <div className="bg-red-600 p-12 transform -rotate-2 shadow-2xl">
+              <h2 className="text-4xl font-black text-white mb-6 transform rotate-1">
+                READY TO FLY?
+              </h2>
+              <p className="text-red-100 text-lg leading-relaxed">
+                Transform your aircraft into a masterpiece that defies convention.
+              </p>
+            </div>
+            
+            <div className="bg-white text-black p-12 transform rotate-1 shadow-2xl">
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="w-8 h-8 bg-red-600"></div>
+                  <span className="font-bold">FAST DELIVERY</span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="w-8 h-8 bg-black"></div>
+                  <span className="font-bold">HD QUALITY</span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="w-8 h-8 bg-red-600"></div>
+                  <span className="font-bold">UNIQUE VISION</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-black border-4 border-red-500 p-12 transform -rotate-1 shadow-2xl">
+              <Button 
+                size="lg" 
+                className="w-full bg-red-600 hover:bg-red-700 text-white py-8 text-xl font-black transform hover:scale-105 transition-all"
+              >
+                START PROJECT
+              </Button>
+            </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+        </div>
+      </section>
+
+      {/* Deconstructed Services */}
+      <section id="services" className="py-32 relative">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-6xl font-black text-center mb-20 transform -rotate-1">
+            <span className="text-white">WHAT I</span>
+            <span className="text-red-500 ml-4">CREATE</span>
+          </h2>
+          
+          <div className="space-y-32">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 border-red-500/20 bg-black/40 backdrop-blur-md hover:bg-black/60">
-                <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-red-500/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-500 transition-colors duration-300 border border-red-400/30">
-                    <service.icon className="w-8 h-8 text-red-400 group-hover:text-white transition-colors duration-300" />
+              <div key={index} className={`grid grid-cols-12 gap-8 items-center ${index % 2 === 1 ? 'direction-rtl' : ''}`}>
+                <div className={`col-span-6 ${index % 2 === 1 ? 'col-start-7' : 'col-start-1'}`}>
+                  <div className={`transform ${index % 2 === 0 ? 'rotate-2' : '-rotate-2'} bg-red-900/20 p-12 backdrop-blur-sm border-l-8 border-red-500`}>
+                    <div className="flex items-center mb-6">
+                      <service.icon className="w-12 h-12 text-red-400 mr-6" />
+                      <h3 className="text-3xl font-black text-white">{service.title}</h3>
+                    </div>
+                    <p className="text-gray-300 text-lg mb-6">{service.description}</p>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, idx) => (
+                        <li key={idx} className="text-red-300 font-bold">→ {feature}</li>
+                      ))}
+                    </ul>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-                  <p className="text-slate-300 mb-6 leading-relaxed">{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-slate-300">
-                        <Star className="w-4 h-4 text-red-400 mr-2" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+                </div>
+                
+                <div className={`col-span-4 ${index % 2 === 1 ? 'col-start-2' : 'col-start-8'}`}>
+                  <div className={`w-32 h-32 bg-red-600 transform ${index % 2 === 0 ? '-rotate-12' : 'rotate-12'} shadow-2xl`}></div>
+                  <div className={`w-24 h-24 bg-white mt-8 transform ${index % 2 === 0 ? 'rotate-6' : '-rotate-6'} ml-8`}></div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-6 relative">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Featured Work</h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              A showcase of recent liveries across different aircraft and styles
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Chaotic Portfolio Grid */}
+      <section id="work" className="py-32 relative">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-6xl font-black mb-20 transform rotate-1">
+            <span className="text-red-500">PORTFOLIO</span>
+            <span className="text-white ml-4">CHAOS</span>
+          </h2>
+          
+          <div className="grid grid-cols-8 gap-4 h-[800px]">
             {portfolio.map((item, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm aspect-[4/3] shadow-xl hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-500 border border-red-500/20">
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-sm text-red-300">{item.category}</p>
-                    <h3 className="text-lg font-bold">{item.title}</h3>
-                  </div>
+              <div 
+                key={index} 
+                className={`relative overflow-hidden group cursor-pointer transform hover:scale-105 transition-all duration-500 ${
+                  index === 0 ? 'col-span-3 row-span-2 rotate-2' :
+                  index === 1 ? 'col-span-2 row-span-1 -rotate-1 col-start-4' :
+                  index === 2 ? 'col-span-3 row-span-2 rotate-1 col-start-6' :
+                  'col-span-2 row-span-1 -rotate-2 col-start-4 row-start-2'
+                }`}
+                style={{
+                  backgroundColor: index % 2 === 0 ? '#dc2626' : '#000',
+                }}
+              >
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="w-full h-full object-cover mix-blend-multiply group-hover:mix-blend-normal transition-all duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform rotate-1">
+                  <p className="text-sm text-red-300 font-bold">{item.category}</p>
+                  <h3 className="text-xl font-black">{item.title}</h3>
                 </div>
               </div>
             ))}
@@ -211,81 +244,78 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-6 relative">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-white mb-6">About the Artist</h2>
-              <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                With years of experience in flight simulator livery painting, I specialize in creating 
-                high-quality, realistic designs that bring virtual aircraft to life. My work spans across 
-                Microsoft Flight Simulator and X-Plane platforms.
-              </p>
-              <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                From meticulously recreating real-world airline liveries to designing completely custom 
-                paint schemes, every project receives the same attention to detail and commitment to excellence.
-              </p>
-              <div className="grid grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-400 mb-2">500+</div>
-                  <p className="text-slate-400">Liveries Created</p>
+      {/* Experimental About Section */}
+      <section id="about" className="py-32 relative">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-2 gap-16 items-center">
+            <div className="transform -rotate-1">
+              <h2 className="text-6xl font-black text-white mb-8">
+                THE
+                <span className="text-red-500 block transform rotate-2 ml-8">ARTIST</span>
+              </h2>
+              <div className="space-y-6 text-lg text-gray-300">
+                <p className="bg-red-900/20 p-6 transform rotate-1 backdrop-blur-sm">
+                  Years of breaking the rules of virtual aviation design. Each livery challenges what's possible.
+                </p>
+                <p className="bg-white/10 p-6 transform -rotate-1 backdrop-blur-sm">
+                  From precise recreations to impossible dreams - if it can fly, I can paint it.
+                </p>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-8">
+                <div className="bg-red-600 p-8 transform rotate-3 text-center">
+                  <div className="text-4xl font-black text-white">500+</div>
+                  <p className="text-red-100 font-bold">LIVERIES</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-400 mb-2">50+</div>
-                  <p className="text-slate-400">Airlines Covered</p>
+                <div className="bg-white p-8 transform -rotate-2 text-center">
+                  <div className="text-4xl font-black text-black">50+</div>
+                  <p className="text-gray-700 font-bold">AIRLINES</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-400 mb-2">3+</div>
-                  <p className="text-slate-400">Years Experience</p>
+                <div className="bg-black border-4 border-red-500 p-8 transform rotate-1 text-center">
+                  <div className="text-4xl font-black text-white">3+</div>
+                  <p className="text-red-400 font-bold">YEARS</p>
+                </div>
+                <div className="bg-red-900 p-8 transform -rotate-3 text-center">
+                  <div className="text-4xl font-black text-white">∞</div>
+                  <p className="text-red-200 font-bold">POSSIBILITIES</p>
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop" 
-                alt="Aircraft livery showcase"
-                className="rounded-2xl shadow-2xl border border-red-500/20"
-              />
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 relative">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Commission?</h2>
-          <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-            Let's bring your vision to life. Whether it's a real airline livery or a completely custom design, 
-            I'm here to help create something exceptional.
-          </p>
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="p-8 border-red-500/20 bg-black/40 backdrop-blur-md shadow-xl hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300">
-              <Users className="w-12 h-12 text-red-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Quick Consultation</h3>
-              <p className="text-slate-300">Discuss your project requirements and get a quote</p>
-            </Card>
-            <Card className="p-8 border-red-500/20 bg-black/40 backdrop-blur-md shadow-xl hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300">
-              <Zap className="w-12 h-12 text-red-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-white mb-2">Fast Delivery</h3>
-              <p className="text-slate-300">Professional results delivered within agreed timelines</p>
-            </Card>
+      {/* Radical Contact Section */}
+      <section id="contact" className="py-32 relative">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <div className="bg-red-600 p-16 transform -rotate-1 shadow-2xl mb-16">
+            <h2 className="text-6xl font-black text-white mb-8 transform rotate-1">
+              LET'S CREATE
+              <span className="block text-black">CHAOS</span>
+            </h2>
+            <p className="text-2xl text-red-100 mb-12 transform -rotate-1">
+              Ready to break the rules of aviation design?
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-black hover:bg-gray-900 text-white px-16 py-8 text-2xl font-black transform rotate-2 hover:rotate-0 transition-all duration-300"
+            >
+              START THE MADNESS
+              <ArrowRight className="ml-4 w-8 h-8" />
+            </Button>
           </div>
-          <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-12 py-4 shadow-2xl hover:shadow-red-500/25 transition-all duration-300">
-            Start Your Commission
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black/50 backdrop-blur-md text-white py-12 px-6 relative border-t border-red-500/20">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="text-2xl font-bold mb-4 text-red-400">Tapzi</div>
-          <p className="text-slate-400 mb-8">Professional Flight Simulator Liveries</p>
-          <div className="border-t border-red-500/20 pt-8">
-            <p className="text-slate-400">© 2024 Tapzi. All rights reserved.</p>
+      {/* Deconstructed Footer */}
+      <footer className="bg-red-600 text-white py-16 transform -rotate-1 origin-bottom-left">
+        <div className="max-w-7xl mx-auto px-6 text-center transform rotate-1">
+          <div className="text-6xl font-black mb-8">TAPZI</div>
+          <p className="text-red-200 text-xl mb-8">DISRUPTING VIRTUAL SKIES SINCE 2021</p>
+          <div className="border-t-4 border-black pt-8">
+            <p className="text-red-100">© 2024 TAPZI. CHAOS GUARANTEED.</p>
           </div>
         </div>
       </footer>
