@@ -1,4 +1,3 @@
-
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     // Handle navigation clicks
@@ -110,3 +109,94 @@ function animateBackgroundElements() {
 
 // Start background animations
 document.addEventListener('DOMContentLoaded', animateBackgroundElements);
+
+// Function to handle free livery request
+function handleFreeRequest(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(event.target);
+    const email = formData.get('email');
+    const aircraft = formData.get('aircraft');
+    const style = formData.get('style');
+    
+    console.log('Free livery request:', { email, aircraft, style });
+    
+    // Add visual feedback
+    const submitBtn = event.target.querySelector('.free-submit-btn');
+    const originalText = submitBtn.innerHTML;
+    
+    submitBtn.innerHTML = 'CHAOS INITIATED...';
+    submitBtn.style.background = '#059669';
+    
+    setTimeout(() => {
+        submitBtn.innerHTML = 'REQUEST SENT!';
+        setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.style.background = '#dc2626';
+            event.target.reset();
+        }, 2000);
+    }, 1500);
+    
+    // You can replace this with actual form submission logic
+    alert(`Thanks for joining the chaos! We'll send free liveries to ${email}`);
+}
+
+// Enhanced portfolio interactions
+function enhancePortfolioEffects() {
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    portfolioItems.forEach((item, index) => {
+        // Add stagger effect on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = entry.target.style.transform.replace('translateY(50px)', 'translateY(0)');
+                    }, index * 100);
+                }
+            });
+        });
+        
+        item.style.opacity = '0';
+        item.style.transform += ' translateY(50px)';
+        observer.observe(item);
+        
+        // Enhanced hover effects
+        item.addEventListener('mouseenter', function() {
+            // Create ripple effect
+            const ripple = document.createElement('div');
+            ripple.style.position = 'absolute';
+            ripple.style.top = '50%';
+            ripple.style.left = '50%';
+            ripple.style.width = '10px';
+            ripple.style.height = '10px';
+            ripple.style.background = 'rgba(248, 113, 113, 0.6)';
+            ripple.style.borderRadius = '50%';
+            ripple.style.transform = 'translate(-50%, -50%) scale(0)';
+            ripple.style.animation = 'ripple 0.6s ease-out';
+            ripple.style.pointerEvents = 'none';
+            
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+}
+
+// Add ripple animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes ripple {
+        to {
+            transform: translate(-50%, -50%) scale(20);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Initialize enhanced effects
+document.addEventListener('DOMContentLoaded', enhancePortfolioEffects);
