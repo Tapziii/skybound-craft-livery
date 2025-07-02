@@ -18,6 +18,8 @@ body {
   position: relative;
 }
 
+/* ... keep existing code (geometric background styles) */
+
 /* Geometric Background */
 .geometric-background {
   position: fixed;
@@ -157,25 +159,22 @@ body {
   position: relative;
 }
 
-.logo-t {
+.logo-image {
   position: absolute;
-  top: -8px;
+  top: 0;
   left: 2rem;
-  font-size: 4rem;
-  font-weight: 900;
-  color: #dc2626;
-  transform: rotate(-12deg);
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+  border: 3px solid #dc2626;
+  transform: rotate(-3deg);
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  transition: all 0.3s ease;
 }
 
-.logo-apzi {
-  position: absolute;
-  top: 1rem;
-  left: 3rem;
-  font-size: 2.25rem;
-  font-weight: 900;
-  color: white;
-  transform: rotate(6deg);
+.logo-image:hover {
+  transform: rotate(0deg) scale(1.05);
+  border-color: #f87171;
 }
 
 .nav-links {
@@ -203,6 +202,8 @@ body {
 .nav-link:nth-child(3):hover {
   transform: rotate(1deg);
 }
+
+/* ... keep existing code (all other styles remain unchanged) */
 
 /* Hero Section */
 .hero-section {
@@ -947,6 +948,11 @@ body {
 @media (max-width: 768px) {
   .nav-links {
     gap: 1.5rem;
+  }
+  
+  .logo-image {
+    width: 100px;
+    height: 50px;
   }
   
   .hero-title h1 {
